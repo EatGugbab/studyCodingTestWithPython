@@ -9,9 +9,12 @@ graph = []
 for _ in range(n):
     graph.append(list(map(int, input())))
 
+
 def dfs(x, y):
+    # 리스트를 벗어날 경우 바로 종료
     if x < 0 or x >= n or y < 0 or y >= m:
         return False
+
     if graph[x][y] == 0:
         graph[x][y] = 1
         dfs(x - 1, y)
@@ -21,6 +24,7 @@ def dfs(x, y):
         return True
     else:
         return False
+
 
 ans = 0
 
@@ -32,6 +36,7 @@ for i in range(n):
 print(ans)
 
 # example input
+#
 # 4 5
 # 00110
 # 00011
