@@ -2,3 +2,4 @@
 # Chapter5
 # #1 음료수 얼려 먹기
 n, m = map(int,input().split())
+data = []
