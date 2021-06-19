@@ -1,3 +1,4 @@
+# 나동빈_코딩테스트_문제풀이
 # 게임 개발
 n, m = map(int, input().split())
 x, y, d = map(int, input().split())
